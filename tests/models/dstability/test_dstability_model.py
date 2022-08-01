@@ -53,6 +53,7 @@ class TestDStabilityModel:
                 "dstability/example_1/Tutorial.stix", id="Input Structure for zip"
             ),
             pytest.param("dstability/Tutorial_v20_2_1", id="Tutorial DStability 20.2.1"),
+            pytest.param("dstability/Tutorial_v2022_01.stix", id="Tutorial DStability 2022.01"),
         ],
     )
     def test_given_datadir_when_parse_then_datastructure_of_expected_type(
@@ -79,6 +80,7 @@ class TestDStabilityModel:
         [
             pytest.param("dstability/example_1", id="Input Structure"),
             pytest.param("dstability/Tutorial_v20_2_1", id="Tutorial DStability 20.2.1"),
+            pytest.param("dstability/Tutorial_v2022_01.stix", id="Tutorial DStability 2022.01"),
         ],
     )
     def test_given_data_when_parseandserialize_then_doesnotraise(self, dir_path: str):
