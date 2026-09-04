@@ -1686,7 +1686,7 @@ class PersistableTangentArea(DStabilityBaseModelStructure):
     Height: float | None = 0.0
     Label: str | None = ""
     Notes: str | None = ""
-    TopZ: float | str | None = "NaN"
+    TopZ: float | str | None = None
 
 
 class PersistableUpliftVanParticleSwarmSettings(DStabilityBaseModelStructure):
